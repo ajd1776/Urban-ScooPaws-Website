@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/app.css">
+
+    <!-- Title & Favicon -->
+    <title>Contact Urban ScooPaws</title>
+</head>
+<body>
+    <div class="page-container">
+
+        <header class="primary-header">
+            <a href="/index.html">
+                <div class="logo center-row">
+                    <img src="/assets/images/logo.png" alt="" width="200px">
+                </div>
+            </a>
+
+            <nav>
+                <ul id="primary-navbar" class="primary-navbar" data-visible="false">
+                    <li>
+                        <a href="/index.html">Home</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="contact-bg"></div>
+
+    <section class="contact subpage">
+        <h1>Contact Us</h1>
+        <h4>Get in touch!</h4>
+
+        <div class="contact-details-container">
+            <div class="contact-details">
+                <img class="info-icon" src="/assets/icons/contact/phone.svg" alt="msg-icon" width="25px">
+                <p>01908 875700</p>
+            </div>
+            <div class="contact-details">
+                <img class="info-icon" src="/assets/icons/contact/email.svg" alt="msg-icon" width="25px">
+                <p>CustomerService@UrbanScooPaws.com</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        
+        <form action="https://api.web3forms.com/submit" method="POST">
+            
+            <input type="hidden"   name="access_key" value="b8b1ea1e-a203-4b35-a739-b09c0a675fdb"/>
+            <input type="hidden"   name="subject"    value="New Urban ScooPaws Form Submission"/>
+            <input type="hidden"   name="redirect"   value="https://web3forms.com/success"/>
+            <input type="checkbox" name="botcheck"   style="display: none;" />
+
+            <div class="contact-form-layout">
+
+                <div class="form-section details">
+                    <h3>Your Contact Details</h3>
+                    <p><span>*</span> Are Required Fields</p>
+
+                    <!-- Name -->
+                    <div>
+                        <label for="name" class="center-row">
+                            <img class="form-icon" src="/assets/icons/contact/name.svg" alt="msg-icon" width="30px">
+                            Full Name <span>*</span>
+                        </label>
+                        <input type="text" name="name" id="name" placeholder="Steve Stevenson" required />
+                    </div>
+                    
+                    <!-- Email -->
+                    <div>
+                        <label for="email" class="center-row">
+                            <img class="form-icon" src="/assets/icons/contact/email.svg" alt="msg-icon" width="30px">
+                            Email Address <span>*</span>
+                        </label>
+                        <input type="email" name="email" id="email" placeholder="Steve.Stevenson@gmail.com" required />
+                    </div>
+                    
+                    <!-- Phone -->
+                    <div>
+                        <label for="phone" class="center-row">
+                            <img class="form-icon" src="/assets/icons/contact/phone.svg" alt="msg-icon" width="30px">
+                            Phone Number <span>*</span>
+                        </label>
+                        <input type="text" name="phone" id="phone" placeholder="01234 567890" required/>
+                    </div>
+                    
+                    <!-- Postcode -->
+                    <div>
+                        <label for="postcode" class="center-row">
+                            <img class="form-icon" src="/assets/icons/contact/location.svg" alt="icon" width="30px">
+                            Postcode <span>*</span>
+                        </label>
+                        <input type="text" name="postcode" id="postcode" placeholder="MK1 1KM" required/>
+                    </div>
+
+                    <!-- Address Line 1 -->
+                    <div>
+                        <label for="address" class="center-row">
+                            <img class="form-icon" src="/assets/icons/contact/postcode.svg" alt="icon" width="30px">
+                            Address <span>*</span>
+                        </label>
+                        <input type="text" name="address" id="address" placeholder="101 Pup Place" required/>
+                    </div>
+
+                    <!-- Questions -->
+                    <div>
+                        <label for="message" class="center-row">
+                        <img class="form-icon" src="/assets/icons/contact/message.svg" alt="msg-icon" width="30px">
+                        Any Questions?
+                        </label>
+                        <textarea rows="5" name="message" id="message" placeholder="Ask Us Anything!"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-section availability">
+
+                    <h3>Your Availability</h3>
+                    <p>Select all that apply</p>
+                    <!-- Select Days Availble -->
+                    <label for="Days Selected" class="select-day">
+                        <input id="cb-monday" name="Days Selected" type="checkbox" autocomplete="off" value="Monday"/>
+                        <label for="cb-monday">Monday</label>
+
+                        <input id="cb-tuesday" name="Days Selected" type="checkbox" autocomplete="off" value="Tuesday"/>
+                        <label for="cb-tuesday">Tuesday</label>
+                        
+                        <input id="cb-wednesday" name="Days Selected" type="checkbox" autocomplete="off" value="Wednesday"/>
+                        <label for="cb-wednesday">Wednesday</label>
+
+                        <input id="cb-thursday" name="Days Selected" type="checkbox" autocomplete="off" value="Thursday"/>
+                        <label for="cb-thursday">Thursday</label>
+
+                        <input id="cb-friday" name="Days Selected" type="checkbox" autocomplete="off" value="Friday"/>
+                        <label for="cb-friday">Friday</label>
+
+                        <input id="cb-saturday" name="Days Selected" type="checkbox" autocomplete="off" value="Saturday"/>
+                        <label for="cb-saturday">Saturday</label>
+
+                        <input id="cb-sunday" name="Days Selected" type="checkbox" autocomplete="off" value="Sunday"/>
+                        <label for="cb-sunday">Sunday</label>
+                    </label>
+
+                </div>
+            </div>
+            
+            <div>
+                <button type="submit" class="btn"> 
+                    <h4>Submit Form</h4>
+                </button>
+            </div>
+
+        </form>
+    </section>
+        
+     <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3X38P7G2CT">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-3X38P7G2CT');
+    </script>
+    
+    
+    
+    
+</body>
