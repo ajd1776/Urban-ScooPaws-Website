@@ -5,7 +5,7 @@
   --c-green-dark:   #16361e;
   --c-green-light:  #2b6d35;
   --c-orange:       #ff7300;
-  --c-orange-2:       #ffb968;
+  --c-orange-2:     #ffb968;
   --c-grey:         #f7f7f7;
   --c-red-1:        #ff0000;
   --c-red-1-lighter:#ffe7e7;
@@ -281,9 +281,8 @@ h5 {
   color: var(--c-grey);
 }
 .home-title {
-  background-image: w;
+  font-size: 3rem;
   text-align: left;
-  line-height: 80px;
 }
 .home-text {
   text-align: left;
@@ -706,6 +705,11 @@ input[type="checkbox"]:checked + label {
   html {
     font-size: 110%;
   }
+
+  .home-title {
+    font-size: 4em;
+    line-height: 80px;
+  }
 }
 
 /* LAPTOP */
@@ -721,10 +725,10 @@ input[type="checkbox"]:checked + label {
   html {
     font-size: 120%;
   }
-  
   .benefits-tiles ul li {
     margin: 1rem 2rem;
   }
+
 }
 
 /* LARGER SCREEN */
